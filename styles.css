@@ -1,0 +1,83 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f2f2f2;
+}
+
+.social-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.social-nav a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #333;
+  color: white;
+  font-size: 28px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.social-nav a:hover {
+  transform: scale(1.1);
+}
+
+/* Brand-specific background colors */
+.social-nav .facebook {
+  background: #3b5998;
+}
+
+.social-nav .twitter {
+  background: #1da1f2;
+}
+
+.social-nav .instagram {
+  background: #e1306c;
+}
+
+.social-nav .linkedin {
+  background: #0077b5;
+}
+
+/* Hover overlay effect using ::before */
+.social-nav a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(0);
+  border-radius: 50%;
+  transition: transform 0.5s ease;
+}
+
+.social-nav a:hover::before {
+  transform: scale(1.5);
+}
+
+/* Tooltip slide-in (optional) */
+.social-nav a .tooltip {
+  position: absolute;
+  bottom: -30px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  transition: bottom 0.3s ease, opacity 0.3s ease;
+}
+
+.social-nav a:hover .tooltip {
+  bottom: 75px;
+  opacity: 1;
+}
