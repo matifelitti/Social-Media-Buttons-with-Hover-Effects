@@ -34,11 +34,11 @@ This project showcases a clean, responsive **user profile card** featuring a use
 To run the project locally:
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/matifelitti/Social-Media-Buttons-with-Hover-Effects.git
    ```
 
-````
 
 2. Navigate into the folder:
 
@@ -55,4 +55,3 @@ To run the project locally:
 * Replace the profile image with your own via the `<img>` tag.
 * Update the username or add links to your real social media profiles.
 * Modify colors, sizing, or spacing in `styles.css` to fit your branding.
-````
